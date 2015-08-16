@@ -1,3 +1,3 @@
-Character voting tool developed in React
+Character voting application developed using Node JS, React, Flux, Socket-IO & MongoDB
 
 src -> http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/
