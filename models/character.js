@@ -11,6 +11,9 @@ var characterSchema = new mongoose.Schema({
   reports: { type: Number, default: 0 },
   random: { type: [Number], index: '2d' },
   voted: { type: Boolean, default: false }
+},
+{
+  collection:'Character'
 });
 
 module.exports = mongoose.model('Character', characterSchema);

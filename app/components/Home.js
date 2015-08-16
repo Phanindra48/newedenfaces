@@ -24,8 +24,10 @@ class Home extends React.Component {
   }
 
   handleClick(character) {
-    var winner = character.characterId;
-    var loser = this.state.characters[1 - this.state.characters.indexOf(winner)].characterId;
+    var winner = character.characterId,index = -1;
+    index = this.state.characters.map(function(r){ return r.characterId === winner; }).indexOf(true);
+
+    var loser = this.state.characters[1 - index].characterId;
     HomeActions.vote(winner, loser);
   }
 
